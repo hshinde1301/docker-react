@@ -10,7 +10,7 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: ap-south-1
+  region: "ap-south-1"
   app: "docker"
   env: "Docker-env"
   bukcet_name: "elasticbeanstalk-ap-south-1-731290072716"
@@ -19,5 +19,5 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-    secure: $AWS_SECRET_KEY
+    secure: "$AWS_SECRET_KEY"
 
